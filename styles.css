@@ -1,0 +1,206 @@
+body {
+    font-family: "Dubai Medium";
+    background-color: #e9f0f8; /* Light blue background */
+    color: #000007; /* White text */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+}
+
+.button{
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    background-color: rgba(128, 128, 128, .9);
+    color: #fff;
+    z-index: 100;
+}
+
+.password-div{
+    width: auto;
+}
+
+.status-box {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#PAT {
+    width: 250px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #000f;
+}
+
+#PAT::placeholder {
+    color: #000000; /* Black color for placeholder text */
+    font-size: 12px;
+}
+
+#upload {
+    background-color: #ffffff;
+    color: #1976d2; /* Dark blue text */
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+#upload:hover {
+    background-color: antiquewhite;
+}
+
+/*Header row styles*/
+hr {
+    border: 0;
+    height: 1px;
+    background: #ffffff;
+    margin: 30px 0;
+}
+
+h1 {
+    font-family: consolas;
+    border: 2px solid #02025f;
+    border-radius: 25px;
+}
+
+
+/*Table elements*/
+div#initial-table-div {
+    height: calc(100vh - 220px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table#initial-table {
+    border-collapse: collapse;
+    width: 70vw;
+    margin-bottom: auto;
+}
+
+th {
+    border: 3px solid rgb(0, 0, 139);
+    align-content: center;
+}
+
+tr {
+    text-align: center;
+    border: 3px solid rgb(0, 0, 49);
+    white-space: nowrap;
+}
+tr:hover{
+    background-color: wheat;
+}
+
+/*Odd and Even row coloring*/
+.even-row {
+    background-color: white;
+}
+
+.odd-row {
+    background-color: #ddd9d9;
+}
+
+/*Icon colors*/
+/*Regular*/
+.icon-up{
+    color:green;
+    font-size: 20px;
+}
+
+.icon-down{
+    color:red;
+    font-size: 20px;
+}
+
+.icon-warning{
+    color:orange;
+    font-size: 20px;
+}
+
+/*Static icons*/
+.icon-warning-static{
+    color:orange;
+    font-size: 20px;
+}
+.icon-up-static{
+    color:green;
+    font-size: 20px;
+}
+
+.icon-down-static{
+    color:red;
+    font-size: 20px;
+}
+
+.clear-filter{
+    color: #1976d2;
+}
+.clear-filter:hover {
+    color: white;
+}
+
+/*Image styling*/
+.logo:hover {
+    opacity: .7
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Css for flip cards*/
+.flip-card {
+    width: 20px;
+    height: 20px;
+    perspective: 1000px; /* This property defines how far the object is away from the user. */
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* This will rotate the card on hover. */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: rgba(255,255,255,1)
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
